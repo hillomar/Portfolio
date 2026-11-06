@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Omar — Future Cybersecurity &amp; Cloud Security Pro (Loading...)</title>
+  <meta name="description" content="Omar's portfolio: an honest beginner on the road to penetration testing, red and blue team work, and cloud security." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace']
+          },
+          colors: {
+            ink: { 950: '#04060a', 900: '#080b12', 800: '#0e121c', 700: '#161b29' },
+            neon: { cyan: '#22d3ee', violet: '#a78bfa', lime: '#a3e635', red: '#fb7185', blue: '#38bdf8' }
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-ink-950 text-slate-300 font-sans antialiased">
+  <a href="#about" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-neon-cyan focus:text-ink-950 focus:px-4 focus:py-2 focus:rounded-lg">Skip to content</a>
+
+  <!-- Living background -->
+  <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="scanbeam" aria-hidden="true"></div>
+  <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ========== NAV ========== -->
+  <header class="fixed top-0 inset-x-0 z-40 backdrop-blur-md bg-ink-950/70 border-b border-white/5">
+    <nav class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between" aria-label="Primary">
+      <a href="#top" class="font-mono font-bold text-white tracking-tight">
+        <span class="text-neon-cyan">&gt;_</span> omar<span class="text-neon-cyan">.sec</span><span class="blink">_</span>
+      </a>
+      <ul class="hidden md:flex items-center gap-8 text-sm">
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="btn-ghost !py-2 !px-4 text-xs" href="#contact">Contact</a></li>
+      </ul>
+      <button id="nav-toggle" class="md:hidden p-2 rounded-lg border border-white/10 text-white" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-white/5 bg-ink-900/95">
+      <ul class="px-5 py-4 flex flex-col gap-3 text-sm">
+        <li><a class="block py-1" href="#about">About</a></li>
+        <li><a class="block py-1" href="#skills">Skills</a></li>
+        <li><a class="block py-1" href="#projects">Projects</a></li>
+        <li><a class="block py-1" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ========== SECTION 1: ABOUT ========== -->
+    <section id="about" class="section pt-36 md:pt-44">
+      <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-[1.25fr_1fr] gap-12 items-center">
+        <div class="reveal">
+          <p class="status-pill float" style="--amp:3px"><span class="pulse-dot"></span> currently: studying, not hacking (yet)</p>
+          <h1 class="font-display font-bold text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.05] mt-5">
+            Not a hacker
+            <span class="text-gradient">yet. Working on it.</span>
+          </h1>
+          <p class="mt-5 font-mono text-lg sm:text-xl text-neon-cyan">
+            &gt; I'm a <span id="typed" class="caret"></span>
+          </p>
+          <div class="mt-7 space-y-4 text-base sm:text-lg leading-relaxed text-slate-400">
+            <p>
+              I'm Omar, and I'm aiming for a career in cybersecurity. I'll be completely honest with you, because
+              honesty is the one thing a security person can't fake: I'm at the very beginning. Every attack starts
+              with patient
+              <button type="button" class="clue" data-clue="1" aria-label="reconnaissance">reconnaissance</button>,
+              and right now I'm doing reconnaissance on my own ignorance. The target is very well defended.
+            </p>
+            <p>
+              I'm learning on TryHackMe, starting from the roots: how websites work, how servers work, how networks
+              are built, and how the entire internet connects. It's <strong class="text-slate-200">100% theory and 0% practical</strong>.
+              Yes, that's a problem. Yes, I'm fixing it.
+            </p>
+            <p>
+              The plan is penetration testing, red and blue team work, and cloud security. This portfolio is
+              empty today and will be full tomorrow, probably. Trust me. I promise. Check back.
+            </p>
+            <p class="text-slate-500 text-base">
+              Fun fact outside the screen: I'm a 2x university shot put champion. I can throw a heavy metal ball
+              very far. Exploits, not yet.
+            </p>
+          </div>
+          <div class="mt-8">
+            <p class="font-mono text-xs text-slate-500 mb-3">// roles I'm pursuing (eventually)</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip float">Penetration Tester, one day</span>
+              <span class="chip float">Red Team Operator, in my dreams</span>
+              <span class="chip float">Blue Team Analyst, with enough tea</span>
+              <span class="chip float">Cloud Security Engineer, loading</span>
+            </div>
+          </div>
+          <div class="mt-9 flex flex-wrap gap-3">
+            <a href="#projects" class="btn-primary">See the (empty) work</a>
+            <a href="#contact" class="btn-ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <aside class="reveal" aria-label="Quick stats">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="stat-card float" data-tilt>
+              <p class="stat-num">0</p>
+              <p class="stat-label">CTFs completed</p>
+              <p class="stat-joke">I haven't done any. But I will. <span role="img" aria-label="wink">&#128521;</span></p>
+            </div>
+            <div class="stat-card float" data-tilt>
+              <p class="stat-num">???</p>
+              <p class="stat-label">detection rules written</p>
+              <p class="stat-joke">I don't know what that means yet. Ask me later.</p>
+            </div>
+            <div class="stat-card float" data-tilt>
+              <p class="stat-num">???</p>
+              <p class="stat-label">cloud platforms hardened</p>
+              <p class="stat-joke">No idea either. My arms are hardened, if that counts.</p>
+            </div>
+            <div class="stat-card float" data-tilt>
+              <p class="stat-num">0</p>
+              <p class="stat-label">cups of coffee</p>
+              <p class="stat-joke">I don't even like coffee, honestly.</p>
+            </div>
+          </div>
+          <div class="code-card float mt-4" aria-hidden="true">
+            <p><span class="t-lime">$</span> whoami</p>
+            <p class="t-cyan">omar</p>
+            <p><span class="t-lime">$</span> cat experience.txt</p>
+            <p>theory:&nbsp;&nbsp;&nbsp;&nbsp;some</p>
+            <p>practical: <span class="t-red">0</span></p>
+            <p><span class="t-lime">$</span> ./hack_the_planet.sh</p>
+            <p class="t-red">bash: No such file or directory</p>
+            <p class="t-lime">[ ... ] still loading<span class="blink">_</span></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 2: SKILLS ========== -->
+    <section id="skills" class="section">
+      <div class="max-w-6xl mx-auto px-5">
+        <div class="reveal max-w-2xl">
+          <p class="font-mono text-neon-violet text-sm mb-3">// the skill tree</p>
+          <h2 class="section-title">Skills &amp; superpowers</h2>
+          <p class="mt-4 text-slate-400">
+            Real talk: the Foundations are what I'm actually studying. Everything else is still locked behind
+            hours of practice I haven't done. Tap or hover a card to see my honest progress.
+            <button type="button" class="clue clue-icon" data-clue="2" aria-label="small glyph">&#9672;</button>
+          </p>
+        </div>
+
+        <div class="mt-12 space-y-12">
+
+          <!-- Foundations (real) -->
+          <div class="reveal g-base">
+            <h3 class="skill-group-title"><span class="dot"></span> Foundations &middot; what I'm actually studying</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <article class="skill-card float" tabindex="0" data-tilt style="--level:40%">
+                <span class="lock-tag">IN PROGRESS</span>
+                <div class="skill-badge">WEB</div>
+                <h4>How Websites Work</h4>
+                <p>What happens between typing a URL and seeing a page. Theory so far.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: studying &middot; Practical: 0%</p>
+              </article>
+              <article class="skill-card float" tabindex="0" data-tilt style="--level:35%">
+                <span class="lock-tag">IN PROGRESS</span>
+                <div class="skill-badge">SRV</div>
+                <h4>How Servers Work</h4>
+                <p>What's running behind the page. I know the idea; I haven't touched a real one.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: studying &middot; Practical: 0%</p>
+              </article>
+              <article class="skill-card float" tabindex="0" data-tilt style="--level:35%">
+                <span class="lock-tag">IN PROGRESS</span>
+                <div class="skill-badge">NET</div>
+                <h4>How Networks Are Built</h4>
+                <p>Who talks to whom, and how. It looks great on paper.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: studying &middot; Practical: 0%</p>
+              </article>
+              <article class="skill-card float" tabindex="0" data-tilt style="--level:30%">
+                <span class="lock-tag">IN PROGRESS</span>
+                <div class="skill-badge">WWW</div>
+                <h4>How the Internet Connects</h4>
+                <p>The whole planet, wired together, mostly by luck and cables.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: studying &middot; Practical: 0%</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Red Team -->
+          <div class="reveal g-red">
+            <h3 class="skill-group-title"><span class="dot"></span> Red Team &middot; Offensive Security</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <article class="skill-card locked float" tabindex="0" data-tilt style="--level:3%">
+                <span class="lock-tag">LOCKED</span>
+                <div class="skill-badge">PT</div>
+                <h4>Penetration Testing</h4>
+                <p>Legally breaking into things. Currently breaking into nothing.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: barely &middot; Practical: 0%</p>
+              </article>
+              <article class="skill-card locked float" tabindex="0" data-tilt style="--level:3%">
+                <span class="lock-tag">LOCKED</span>
+                <div class="skill-badge">Web</div>
+                <h4>Web App Security</h4>
+                <p>Finding holes in websites. First I'm learning how websites work. Baby steps.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: barely &middot; Practical: 0%</p>
+              </article>
+              <article class="skill-card locked float" tabindex="0" data-tilt style="--level:2%">
+                <span class="lock-tag">LOCKED</span>
+                <div class="skill-badge">AD</div>
+                <h4>Active Directory Attacks</h4>
+                <p>I've read the words. The words and I are not friends yet.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: no &middot; Practical: 0%</p>
+              </article>
+              <article class="skill-card locked float" tabindex="0" data-tilt style="--level:2%">
+                <span class="lock-tag">LOCKED</span>
+                <div class="skill-badge">Kit</div>
+                <h4>Burp &middot; Nmap &middot; Metasploit</h4>
+                <p>I've seen the logos. We haven't been properly introduced.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: logos only &middot; Practical: 0%</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Blue Team -->
+          <div class="reveal g-blue">
+            <h3 class="skill-group-title"><span class="dot"></span> Blue Team &middot; Defensive Security</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <article class="skill-card locked float" tabindex="0" data-tilt style="--level:3%">
+                <span class="lock-tag">LOCKED</span>
+                <div class="skill-badge">SIEM</div>
+                <h4>SIEM &amp; Log Analysis</h4>
+                <p>Reading logs for a living. For now I read error messages and panic.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: barely &middot; Practical: 0%</p>
+              </article>
+              <article class="skill-card locked float" tabindex="0" data-tilt style="--level:3%">
+                <span class="lock-tag">LOCKED</span>
+                <div class="skill-badge">IR</div>
+                <h4>Incident Response</h4>
+                <p>When everything is on fire, I'll bring the extinguisher. Eventually.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: barely &middot; Practical: 0%</p>
+              </article>
+              <article class="skill-card locked float" tabindex="0" data-tilt style="--level:2%">
+                <span class="lock-tag">LOCKED</span>
+                <div class="skill-badge">TH</div>
+                <h4>Threat Hunting</h4>
+                <p>Hunting bad guys in the data. Currently hunting for a decent study schedule.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: no &middot; Practical: 0%</p>
+              </article>
+              <article class="skill-card locked float" tabindex="0" data-tilt style="--level:4%" id="skill-network-defense">
+                <span class="lock-tag">LOCKED</span>
+                <div class="skill-badge">FW</div>
+                <h4>Network Defence</h4>
+                <p>The wall that judges every packet. I respect it. I haven't built one.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: barely &middot; Practical: 0%</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Cloud Security -->
+          <div class="reveal g-cloud">
+            <h3 class="skill-group-title"><span class="dot"></span> Cloud Security</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <article class="skill-card locked float" tabindex="0" data-tilt style="--level:3%" id="skill-cloud-first">
+                <span class="lock-tag">LOCKED</span>
+                <div class="skill-badge">AWS</div>
+                <h4>AWS Access &amp; Governance</h4>
+                <p>Deciding who may do what in the cloud. My only access control so far is the TV remote.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: barely &middot; Practical: 0%</p>
+              </article>
+              <article class="skill-card locked float" tabindex="0" data-tilt style="--level:2%">
+                <span class="lock-tag">LOCKED</span>
+                <div class="skill-badge">CSPM</div>
+                <h4>Cloud Posture &amp; Misconfig</h4>
+                <p>Spotting dangerous mistakes in the cloud. I'm already great at making mistakes. Spotting them, TBD.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: no &middot; Practical: 0%</p>
+              </article>
+              <article class="skill-card locked float" tabindex="0" data-tilt style="--level:2%">
+                <span class="lock-tag">LOCKED</span>
+                <div class="skill-badge">K8s</div>
+                <h4>Container &amp; Kubernetes Security</h4>
+                <p>Containers inside clusters inside nightmares. Even the name scares me.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: no &middot; Practical: 0%</p>
+              </article>
+              <article class="skill-card locked float" tabindex="0" data-tilt style="--level:2%">
+                <span class="lock-tag">LOCKED</span>
+                <div class="skill-badge">IaC</div>
+                <h4>IaC Security</h4>
+                <p>Checking infrastructure code for holes. First I need to understand infrastructure.</p>
+                <div class="meter" aria-hidden="true"><span></span></div>
+                <p class="skill-detail">Theory: no &middot; Practical: 0%</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 3: PROJECTS ========== -->
+    <section id="projects" class="section">
+      <div class="max-w-6xl mx-auto px-5">
+        <div class="reveal max-w-2xl">
+          <p class="font-mono text-neon-lime text-sm mb-3">// case files</p>
+          <h2 class="section-title">Projects &amp; achievements</h2>
+          <p class="mt-4 text-slate-400">
+            Three sections: the security projects I promise to build, the apps I really did ship,
+            and the one thing I'm genuinely a champion at.
+          </p>
+        </div>
+
+        <!-- Security projects (not started) -->
+        <h3 class="sub-title reveal">Cybersecurity projects <span>status: promised, not started</span></h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div class="reveal flex">
+            <article class="project-card soon float w-full" id="project-pentest" data-tilt>
+              <div class="project-thumb thumb-a" aria-hidden="true"><span class="thumb-text">404</span></div>
+              <div class="p-6 flex flex-col grow">
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="tag">Pentest</span><span class="tag">Not started</span>
+                </div>
+                <h3 class="font-display text-xl text-white font-bold">Web App Pentest Report</h3>
+                <p class="mt-2 text-sm text-slate-400 grow">
+                  The plan: turn a login box into a confession booth with one injection flaw, dump an entire user
+                  table, craft the final
+                  <button type="button" class="clue" data-clue="3" aria-label="payload">payload</button>,
+                  and write a very professional report. The reality: a blank text file and big dreams.
+                </p>
+                <p class="mt-3 font-mono text-xs text-slate-500">progress: 0% &middot; promise: 100%</p>
+                <div class="mt-5 flex gap-3">
+                  <a class="btn-ghost !py-2 !px-4 text-sm" href="#" aria-disabled="true">GitHub: soon, trust me</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="reveal flex">
+            <article class="project-card soon float w-full" data-tilt>
+              <div class="project-thumb thumb-b" aria-hidden="true"><span class="thumb-text">TODO</span></div>
+              <div class="p-6 flex flex-col grow">
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="tag">Blue Team</span><span class="tag">Planned</span>
+                </div>
+                <h3 class="font-display text-xl text-white font-bold">Home SOC Lab</h3>
+                <p class="mt-2 text-sm text-slate-400 grow">
+                  The plan: build a tiny security operations centre at home, attack it, and watch the alerts
+                  light up. The reality: I'm still working out what half of those words mean.
+                </p>
+                <p class="mt-3 font-mono text-xs text-slate-500">progress: 0% &middot; promise: 100%</p>
+                <div class="mt-5 flex gap-3">
+                  <a class="btn-ghost !py-2 !px-4 text-sm" href="#" aria-disabled="true">GitHub: soon, trust me</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="reveal flex">
+            <article class="project-card soon float w-full" data-tilt>
+              <div class="project-thumb thumb-c" aria-hidden="true"><span class="thumb-text">???</span></div>
+              <div class="p-6 flex flex-col grow">
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="tag">Cloud</span><span class="tag">Dreaming</span>
+                </div>
+                <h3 class="font-display text-xl text-white font-bold">CloudGuard Audit</h3>
+                <p class="mt-2 text-sm text-slate-400 grow">
+                  The plan: audit a cloud account for dangerous mistakes and fix them all. The reality: the only
+                  thing I've audited so far is my snack drawer, and it failed.
+                </p>
+                <p class="mt-3 font-mono text-xs text-slate-500">progress: 0% &middot; promise: 100%</p>
+                <div class="mt-5 flex gap-3">
+                  <a class="btn-ghost !py-2 !px-4 text-sm" href="#" aria-disabled="true">GitHub: soon, trust me</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Real repos -->
+        <h3 class="sub-title reveal mt-14">Side quests I actually shipped <span>not security, but real and running</span></h3>
+        <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
+
+          <div class="reveal flex">
+            <article class="project-card float w-full" data-tilt>
+              <div class="project-thumb thumb-d" aria-hidden="true"><span class="thumb-text">MM</span></div>
+              <div class="p-6 flex flex-col grow">
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="tag">App</span><span class="tag">AI co-pilot</span>
+                </div>
+                <h3 class="font-display text-lg text-white font-bold">Mesh Manager</h3>
+                <p class="mt-2 text-sm text-slate-400 grow">One of my real builds. It exists, it runs, and I'm proud of it.</p>
+                <div class="mt-5">
+                  <a class="btn-primary !py-2 !px-4 text-sm" href="https://github.com/hillomar" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="reveal flex">
+            <article class="project-card float w-full" data-tilt>
+              <div class="project-thumb thumb-e" aria-hidden="true"><span class="thumb-text">UB</span></div>
+              <div class="p-6 flex flex-col grow">
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="tag">App</span><span class="tag">AI co-pilot</span>
+                </div>
+                <h3 class="font-display text-lg text-white font-bold">UniBuddy</h3>
+                <p class="mt-2 text-sm text-slate-400 grow">A student companion app for university life. Less hacking, more surviving exams.</p>
+                <div class="mt-5">
+                  <a class="btn-primary !py-2 !px-4 text-sm" href="https://github.com/hillomar" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="reveal flex">
+            <article class="project-card float w-full" data-tilt>
+              <div class="project-thumb thumb-f" aria-hidden="true"><span class="thumb-text">FB</span></div>
+              <div class="p-6 flex flex-col grow">
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="tag">App</span><span class="tag">AI co-pilot</span>
+                </div>
+                <h3 class="font-display text-lg text-white font-bold">Football App</h3>
+                <p class="mt-2 text-sm text-slate-400 grow">Built for the love of the game. Zero vulnerabilities found, because I haven't looked.</p>
+                <div class="mt-5">
+                  <a class="btn-primary !py-2 !px-4 text-sm" href="https://github.com/hillomar" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="reveal flex">
+            <article class="project-card float w-full" data-tilt>
+              <div class="project-thumb thumb-a" aria-hidden="true"><span class="thumb-text">FC</span></div>
+              <div class="p-6 flex flex-col grow">
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="tag">App</span><span class="tag">AI co-pilot</span>
+                </div>
+                <h3 class="font-display text-lg text-white font-bold">Football Club App</h3>
+                <p class="mt-2 text-sm text-slate-400 grow">A club app, built with an AI co-pilot. I steer, it types, we both pretend it's teamwork.</p>
+                <div class="mt-5">
+                  <a class="btn-primary !py-2 !px-4 text-sm" href="https://github.com/hillomar" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Achievement -->
+        <h3 class="sub-title reveal mt-14">Achievements <span>the one section that's already full</span></h3>
+        <div class="reveal">
+          <article class="achv-card float" data-tilt>
+            <div class="photo-frame">
+              <img src="shotput.jpg" alt="Omar at a shot put competition" hidden
+                   onload="this.hidden=false;this.nextElementSibling.hidden=true" />
+              <div class="photo-fallback">
+                <p class="font-mono text-xs text-slate-500 px-4 text-center">[ photo loading...<br />save it as shotput.jpg next to index.html ]</p>
+              </div>
+            </div>
+            <div class="p-6 sm:p-8 flex flex-col justify-center">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="tag">Achievement</span><span class="tag">Verified: this one is real</span>
+              </div>
+              <h3 class="font-display text-2xl sm:text-3xl text-white font-bold">2x University Shot Put Champion</h3>
+              <p class="mt-1 font-mono text-sm text-neon-lime">Men's category &middot; two titles &middot; zero hacks</p>
+              <p class="mt-4 text-slate-400 leading-relaxed">
+                Turns out the first thing I learned to launch was a heavy metal ball, not an exploit. Two
+                championships later, my plan for every firewall is still "throw something heavy at it."
+                Legal advice pending.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER + CONSOLE ========== -->
+  <footer id="contact" class="border-t border-white/5 mt-10">
+    <div class="max-w-6xl mx-auto px-5 py-14">
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="font-display text-2xl text-white font-bold">Hire me. I'm cheap, honest, and I throw things really far.</h2>
+          <p class="mt-3 text-slate-400 max-w-md">Beginner roles, mentors, study buddies and CTF teammates who don't mind carrying me: say hello.</p>
+          <div class="mt-5 flex flex-wrap gap-3 text-sm">
+            <a class="btn-ghost !py-2 !px-4" href="https://www.linkedin.com/in/mohammad-abdulla-hill-omar-b13aa1349" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn-ghost !py-2 !px-4" href="https://github.com/hillomar" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn-ghost !py-2 !px-4" href="https://tryhackme.com/p/hillomar" target="_blank" rel="noopener noreferrer">TryHackMe</a>
+          </div>
+        </div>
+
+        <!-- Low-profile admin console -->
+        <form id="console-form" class="console" autocomplete="off" novalidate>
+          <label for="console-input" class="console-label">sys.admin &gt; utility</label>
+          <div class="console-row">
+            <span class="console-prompt" aria-hidden="true">$</span>
+            <input id="console-input" name="key" type="text" spellcheck="false" autocapitalize="off" autocorrect="off"
+                   placeholder="[Console: Awaiting Authorization Key...]" aria-describedby="console-status" />
+            <button type="submit" class="console-go" aria-label="Submit authorization key">&#9166;</button>
+          </div>
+          <p id="console-status" class="console-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <p class="mt-12 text-xs text-slate-600 font-mono">&copy; <span id="year">2026</span> Omar &middot; Built with HTML, Tailwind and unearned confidence.</p>
+    </div>
+  </footer>
+
+  <!-- ========== DEV LOG ========== -->
+  <aside id="dev-log" class="dev-log" hidden aria-label="Trace log">
+    <div class="dev-log-head">
+      <span class="font-mono text-xs text-neon-lime">&#9679; trace.log</span>
+      <button type="button" id="dev-log-toggle" class="text-xs text-slate-400 hover:text-white" aria-expanded="true">hide</button>
+    </div>
+    <div id="dev-log-body" class="dev-log-body" aria-live="polite"></div>
+  </aside>
+
+  <!-- ========== DETECTIVE DOSSIER OVERLAY ========== -->
+  <div id="dossier" class="dossier" role="dialog" aria-modal="true" aria-labelledby="dossier-title" hidden>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div id="confetti" class="confetti" aria-hidden="true"></div>
+
+    <button id="exit-console" type="button" class="exit-btn">&#10005; Exit Console</button>
+
+    <div class="dossier-scroll">
+      <div class="dossier-inner">
+
+        <section id="stage-intro" class="stage">
+          <p class="stamp">TOP SECRET</p>
+          <p class="font-mono text-neon-cyan text-sm mb-2">CASE FILE #0xSEC-443</p>
+          <h2 id="dossier-title" class="font-display text-3xl sm:text-5xl text-white font-bold leading-tight">The Detective Dossier</h2>
+          <p class="mt-5 text-slate-300 leading-relaxed max-w-xl">
+            Clearance verified, Analyst. You followed the trail through this portfolio and found the key, which
+            makes you better at reconnaissance than the guy who built it. Three riddles stand between you and
+            the vault. Each carries a hint pointing back to something you already saw on the page.
+          </p>
+          <button type="button" id="begin-btn" class="btn-primary mt-8">Begin investigation &rarr;</button>
+        </section>
+
+        <section id="stage-riddles" class="stage" hidden>
+          <div class="flex items-center justify-between gap-4 mb-6">
+            <p class="font-mono text-neon-cyan text-sm" id="riddle-counter">RIDDLE 1 / 3</p>
+            <ol class="flex gap-2" id="riddle-dots" aria-label="Progress">
+              <li class="dot-step"></li><li class="dot-step"></li><li class="dot-step"></li>
+            </ol>
+          </div>
+          <h2 id="riddle-question" class="font-display text-2xl sm:text-3xl text-white font-bold leading-snug"></h2>
+          <p id="riddle-hint" class="mt-4 text-sm italic text-slate-500"></p>
+
+          <form id="riddle-form" class="mt-8" autocomplete="off" novalidate>
+            <label for="riddle-input" class="sr-only">Your answer</label>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <input id="riddle-input" type="text" spellcheck="false" autocapitalize="off" autocorrect="off"
+                     class="riddle-input" placeholder="type your answer..." />
+              <button type="submit" class="btn-primary shrink-0">Decrypt</button>
+            </div>
+            <p id="riddle-feedback" class="mt-3 font-mono text-sm min-h-[1.5rem]" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <section id="stage-granted" class="stage text-center" hidden>
+          <h2 class="glitch" data-text="ACCESS GRANTED" id="granted-title">ACCESS GRANTED</h2>
+          <p class="mt-4 font-mono text-neon-lime text-sm">decrypting classified file...</p>
+          <div class="load-bar" aria-hidden="true"><span></span></div>
+        </section>
+
+        <section id="stage-reveal" class="stage" hidden>
+          <p class="font-mono text-neon-lime text-sm mb-3 text-center">&#9733; FILE DECLASSIFIED &#9733;</p>
+          <div class="reveal-card">
+            <div class="reveal-img">
+              <img src="shotput.jpg" alt="Omar at a shot put competition" hidden
+                   onload="this.hidden=false;this.nextElementSibling.hidden=true" />
+              <div class="text-center">
+                <svg viewBox="0 0 200 200" width="170" height="170" role="img" aria-label="Placeholder: a padlock wearing sunglasses and smiling">
+                  <path d="M62 92 V64 a38 38 0 0 1 76 0 V92" fill="none" stroke="#94a3b8" stroke-width="14" stroke-linecap="round"/>
+                  <rect x="40" y="88" width="120" height="92" rx="18" fill="#22d3ee"/>
+                  <rect x="40" y="88" width="120" height="92" rx="18" fill="none" stroke="#0e7490" stroke-width="4"/>
+                  <rect x="58" y="116" width="38" height="24" rx="8" fill="#04060a"/>
+                  <rect x="104" y="116" width="38" height="24" rx="8" fill="#04060a"/>
+                  <rect x="94" y="124" width="12" height="4" fill="#04060a"/>
+                  <path d="M78 156 q22 16 44 0" fill="none" stroke="#04060a" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+                <p class="text-xs text-slate-500 font-mono mt-2">[ save your photo as shotput.jpg to replace this padlock ]</p>
+              </div>
+            </div>
+            <div class="p-6 sm:p-8">
+              <p class="font-mono text-xs text-neon-violet uppercase tracking-widest">True secret superpower</p>
+              <h2 class="font-display text-2xl sm:text-3xl text-white font-bold mt-1">Certified Heavy Object Launcher&trade;</h2>
+              <p class="mt-4 text-slate-300 leading-relaxed">
+                Two-time university shot put champion. I can launch a heavy metal ball across a field with
+                alarming accuracy. I cannot yet launch a port scan, a reverse shell, or, honestly, a terminal
+                without Googling how.
+              </p>
+              <p class="mt-3 text-slate-400 text-sm leading-relaxed">
+                Known weakness: every security problem still looks like a throwing problem. My incident response
+                plan is "stay calm and lift something." Please hire me before I try it on a real network.
+              </p>
+              <div class="mt-6 flex flex-wrap gap-3">
+                <button type="button" id="reveal-exit" class="btn-primary">Return to portfolio</button>
+                <button type="button" id="reveal-replay" class="btn-ghost">Replay the case</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
